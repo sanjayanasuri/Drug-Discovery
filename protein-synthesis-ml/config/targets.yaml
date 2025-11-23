@@ -1,0 +1,29 @@
+# Target configuration file
+# Defines available targets for multi-target drug discovery
+
+targets:
+  HIV1_PROTEASE:
+    chembl_id: "CHEMBL243"
+    name: "HIV-1 Protease"
+    description: "HIV-1 protease inhibitor screening"
+    model_path: "models/hiv1_protease_rf.pkl"
+    legacy_path: "models/hiv_protease_rf.pkl"  # For backward compatibility
+    
+  SARS2_MPRO:
+    chembl_id: "CHEMBL4301553"
+    name: "SARS-CoV-2 Main Protease"
+    description: "SARS-CoV-2 main protease (3CLpro) inhibitor screening"
+    model_path: "models/sars2_mpro_rf.pkl"
+    
+  INFLUENZA_NEURAMINIDASE:
+    chembl_id: "CHEMBL3404044"
+    name: "Influenza Neuraminidase"
+    description: "Influenza neuraminidase inhibitor screening"
+    model_path: "models/influenza_neuraminidase_rf.pkl"
+    
+  HCV_NS5B:
+    chembl_id: "CHEMBL1615002"
+    name: "HCV NS5B Polymerase"
+    description: "Hepatitis C virus NS5B polymerase inhibitor screening"
+    model_path: "models/hcv_ns5b_rf.pkl"
+

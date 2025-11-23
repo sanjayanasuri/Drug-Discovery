@@ -1,0 +1,10 @@
+{
+  "target_name": "Custom CHEMBL240",
+  "chembl_id": "CHEMBL240",
+  "model_path": "models/custom_chembl240_rf.pkl",
+  "roc_auc": 0.8520109851169384,
+  "n_train": 1417,
+  "n_test": 355,
+  "n_active_train": 332,
+  "n_inactive_train": 1085
+}

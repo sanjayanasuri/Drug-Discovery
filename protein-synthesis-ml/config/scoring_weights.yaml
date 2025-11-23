@@ -1,0 +1,36 @@
+# Composite scoring weights configuration
+# Adjust these weights based on disease area or use case
+
+scoring:
+  # Target activity weight
+  target_weight: 0.4
+  
+  # Toxicity penalties (higher values = stronger penalty)
+  tox_penalty:
+    hERG: 0.3
+    DILI: 0.2
+    AMES: 0.2
+    CYP3A4_Veith: 0.1
+    CYP2D6_Veith: 0.1
+  
+  # Absorption rewards (higher values = stronger reward)
+  absorption_weight:
+    HIA_Hou: 0.1
+    caco2_wang: 0.1  # Applied as penalty if < -5.15
+  
+  # Distribution
+  distribution:
+    BBB_Martins: 0.05  # Optional, context-dependent
+    PPBR_AZ: 0.0  # Moderate values ideal, handled separately
+  
+  # Other properties
+  other:
+    LD50_Zhu: 0.05  # Penalty if very high (> 5.0)
+    Half_Life_Obach: 0.0  # Moderate values ideal
+  
+  # Docking (if available)
+  docking:
+    enabled: false
+    weight: 0.1
+    normalize_range: [-15.0, -5.0]  # kcal/mol range to normalize
+

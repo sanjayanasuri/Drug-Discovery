@@ -1,0 +1,7 @@
+smiles,compound_id
+CCO,ethanol
+Cc1ccccc1,toluene
+CC(C)NC(=O)OCc1ccccc1,example_1
+CC(C)(C)NC(=O)OCc1ccccc1,example_2
+C1=CC=CC=C1,benzene
+
